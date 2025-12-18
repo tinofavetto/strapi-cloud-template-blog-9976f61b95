@@ -618,6 +618,7 @@ export interface ApiProductEnrichmentProductEnrichment
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    quote: Schema.Attribute.Component<'shared.quote', true>;
     sku: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.Unique;

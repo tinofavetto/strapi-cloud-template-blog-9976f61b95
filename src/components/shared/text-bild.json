@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_shared_text_bilds",
+  "info": {
+    "displayName": "Text / Bild",
+    "icon": "layout"
+  },
+  "options": {},
+  "attributes": {
+    "Text": {
+      "type": "blocks"
+    },
+    "Bild": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

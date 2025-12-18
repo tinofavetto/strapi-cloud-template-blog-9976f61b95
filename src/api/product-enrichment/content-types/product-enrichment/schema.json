@@ -28,6 +28,11 @@
       "type": "component",
       "component": "shared.text-bild",
       "repeatable": true
+    },
+    "quote": {
+      "type": "component",
+      "component": "shared.quote",
+      "repeatable": true
     }
   }
 }
