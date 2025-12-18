@@ -621,6 +621,8 @@ export interface ApiProductEnrichmentProductEnrichment
     sku: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.Unique;
+    Slider: Schema.Attribute.Component<'shared.slider', true>;
+    text_image: Schema.Attribute.Component<'shared.text-bild', true>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

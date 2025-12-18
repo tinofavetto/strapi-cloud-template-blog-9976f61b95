@@ -18,6 +18,16 @@
     },
     "description": {
       "type": "blocks"
+    },
+    "Slider": {
+      "type": "component",
+      "component": "shared.slider",
+      "repeatable": true
+    },
+    "text_image": {
+      "type": "component",
+      "component": "shared.text-bild",
+      "repeatable": true
     }
   }
 }
