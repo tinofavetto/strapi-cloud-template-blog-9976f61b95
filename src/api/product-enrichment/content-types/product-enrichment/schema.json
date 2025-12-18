@@ -16,23 +16,13 @@
       "required": true,
       "unique": true
     },
-    "description": {
-      "type": "blocks"
-    },
-    "Slider": {
-      "type": "component",
-      "component": "shared.slider",
-      "repeatable": true
-    },
-    "text_image": {
-      "type": "component",
-      "component": "shared.text-bild",
-      "repeatable": true
-    },
-    "quote": {
-      "type": "component",
-      "component": "shared.quote",
-      "repeatable": true
+    "page_content": {
+      "type": "dynamiczone",
+      "components": [
+        "shared.text-bild",
+        "shared.slider",
+        "shared.quote"
+      ]
     }
   }
 }

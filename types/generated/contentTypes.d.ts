@@ -610,20 +610,19 @@ export interface ApiProductEnrichmentProductEnrichment
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    description: Schema.Attribute.Blocks;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::product-enrichment.product-enrichment'
     > &
       Schema.Attribute.Private;
+    page_content: Schema.Attribute.DynamicZone<
+      ['shared.text-bild', 'shared.slider', 'shared.quote']
+    >;
     publishedAt: Schema.Attribute.DateTime;
-    quote: Schema.Attribute.Component<'shared.quote', true>;
     sku: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.Unique;
-    Slider: Schema.Attribute.Component<'shared.slider', true>;
-    text_image: Schema.Attribute.Component<'shared.text-bild', true>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
