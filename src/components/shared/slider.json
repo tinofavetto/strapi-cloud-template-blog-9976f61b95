@@ -39,6 +39,14 @@
         "not_logged_in"
       ],
       "default": "all"
+    },
+    "render_mode": {
+      "type": "enumeration",
+      "enum": [
+        "append",
+        "override"
+      ],
+      "default": "append"
     }
   }
 }

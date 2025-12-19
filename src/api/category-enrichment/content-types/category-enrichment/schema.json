@@ -25,6 +25,19 @@
       "required": true,
       "unique": true
     },
+    "render_mode": {
+      "type": "enumeration",
+      "enum": [
+        "append",
+        "override"
+      ],
+      "default": "append",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
     "page_content": {
       "type": "dynamiczone",
       "pluginOptions": {
@@ -35,7 +48,8 @@
       "components": [
         "shared.text-bild",
         "shared.slider",
-        "shared.quote"
+        "shared.quote",
+        "shared.rich-text"
       ]
     }
   }
