@@ -11,6 +11,39 @@
     },
     "body": {
       "type": "text"
+    },
+    "spacing": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "top",
+        "bottom",
+        "both"
+      ],
+      "default": "none"
+    },
+    "background": {
+      "type": "enumeration",
+      "enum": [
+        "white",
+        "gray"
+      ],
+      "default": "white"
+    },
+    "css_class": {
+      "type": "string"
+    },
+    "css_id": {
+      "type": "string"
+    },
+    "visibility": {
+      "type": "enumeration",
+      "enum": [
+        "all",
+        "logged_in",
+        "not_logged_in"
+      ],
+      "default": "all"
     }
   }
 }
